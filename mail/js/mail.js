@@ -14,14 +14,20 @@ const mailList = [
    'qua@gmail.com',
 ];
 
+//create a variable to show a message to the user
+let mailVerified = false;
+
 // create a for cycle to verify mailRequest and mailList strings
 for (let i = 0; i < mailList.length; i++) {
 
    if (mailRequest === mailList[i]) {
       mailVerified = true;
-      alert('Hai trovato la tua email!');
-   } else {
-      alert('Non hai trovato la tua mail');
    }
    
+}
+
+if (mailVerified == true) {
+   alert('Hai trovato la tua email!');
+} else {
+   alert('Non hai trovato la tua email.');
 }
