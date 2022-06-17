@@ -6,3 +6,12 @@ const playerDice = Math.floor(Math.random() * (6) + 1);
 console.log(playerDice);
 const computerDice = Math.floor(Math.random() * (6) + 1);
 console.log(computerDice)
+
+
+if (playerDice > computerDice) {
+   alert('Hai vinto!');
+} else if (playerDice < computerDice) {
+   alert('Hai perso!');
+} else if (playerDice == computerDice) {
+   alert('Pari!');
+}
